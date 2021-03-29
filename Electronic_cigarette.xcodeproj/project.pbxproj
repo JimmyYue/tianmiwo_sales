@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA26C69726117254008E9A6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA26C69626117254008E9A6D /* AppDelegate.m */; };
+		AA26C69A26117254008E9A6D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA26C69926117254008E9A6D /* SceneDelegate.m */; };
+		AA26C69D26117254008E9A6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA26C69C26117254008E9A6D /* ViewController.m */; };
+		AA26C6A026117254008E9A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26C69E26117254008E9A6D /* Main.storyboard */; };
+		AA26C6A326117254008E9A6D /* Electronic_cigarette.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA26C6A126117254008E9A6D /* Electronic_cigarette.xcdatamodeld */; };
+		AA26C6A526117257008E9A6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA26C6A426117257008E9A6D /* Assets.xcassets */; };
+		AA26C6A826117257008E9A6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA26C6A626117257008E9A6D /* LaunchScreen.storyboard */; };
+		AA26C6AB26117257008E9A6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA26C6AA26117257008E9A6D /* main.m */; };
+		AA26C6B526117258008E9A6D /* Electronic_cigaretteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA26C6B426117258008E9A6D /* Electronic_cigaretteTests.m */; };
+		AA26C6C026117258008E9A6D /* Electronic_cigaretteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA26C6BF26117258008E9A6D /* Electronic_cigaretteUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA26C6B126117258008E9A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA26C68A26117254008E9A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA26C69126117254008E9A6D;
+			remoteInfo = Electronic_cigarette;
+		};
+		AA26C6BC26117258008E9A6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA26C68A26117254008E9A6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA26C69126117254008E9A6D;
+			remoteInfo = Electronic_cigarette;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA26C69226117254008E9A6D /* Electronic_cigarette.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Electronic_cigarette.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA26C69526117254008E9A6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA26C69626117254008E9A6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA26C69826117254008E9A6D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AA26C69926117254008E9A6D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AA26C69B26117254008E9A6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA26C69C26117254008E9A6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA26C69F26117254008E9A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA26C6A226117254008E9A6D /* Electronic_cigarette.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Electronic_cigarette.xcdatamodel; sourceTree = "<group>"; };
+		AA26C6A426117257008E9A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA26C6A726117257008E9A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA26C6A926117257008E9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA26C6AA26117257008E9A6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA26C6B026117258008E9A6D /* Electronic_cigaretteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Electronic_cigaretteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA26C6B426117258008E9A6D /* Electronic_cigaretteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Electronic_cigaretteTests.m; sourceTree = "<group>"; };
+		AA26C6B626117258008E9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA26C6BB26117258008E9A6D /* Electronic_cigaretteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Electronic_cigaretteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA26C6BF26117258008E9A6D /* Electronic_cigaretteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Electronic_cigaretteUITests.m; sourceTree = "<group>"; };
+		AA26C6C126117258008E9A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA26C68F26117254008E9A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA26C6AD26117258008E9A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA26C6B826117258008E9A6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA26C68926117254008E9A6D = {
+			isa = PBXGroup;
+			children = (
+				AA26C69426117254008E9A6D /* Electronic_cigarette */,
+				AA26C6B326117258008E9A6D /* Electronic_cigaretteTests */,
+				AA26C6BE26117258008E9A6D /* Electronic_cigaretteUITests */,
+				AA26C69326117254008E9A6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA26C69326117254008E9A6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA26C69226117254008E9A6D /* Electronic_cigarette.app */,
+				AA26C6B026117258008E9A6D /* Electronic_cigaretteTests.xctest */,
+				AA26C6BB26117258008E9A6D /* Electronic_cigaretteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA26C69426117254008E9A6D /* Electronic_cigarette */ = {
+			isa = PBXGroup;
+			children = (
+				AA26C69526117254008E9A6D /* AppDelegate.h */,
+				AA26C69626117254008E9A6D /* AppDelegate.m */,
+				AA26C69826117254008E9A6D /* SceneDelegate.h */,
+				AA26C69926117254008E9A6D /* SceneDelegate.m */,
+				AA26C69B26117254008E9A6D /* ViewController.h */,
+				AA26C69C26117254008E9A6D /* ViewController.m */,
+				AA26C69E26117254008E9A6D /* Main.storyboard */,
+				AA26C6A426117257008E9A6D /* Assets.xcassets */,
+				AA26C6A626117257008E9A6D /* LaunchScreen.storyboard */,
+				AA26C6A926117257008E9A6D /* Info.plist */,
+				AA26C6AA26117257008E9A6D /* main.m */,
+				AA26C6A126117254008E9A6D /* Electronic_cigarette.xcdatamodeld */,
+			);
+			path = Electronic_cigarette;
+			sourceTree = "<group>";
+		};
+		AA26C6B326117258008E9A6D /* Electronic_cigaretteTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA26C6B426117258008E9A6D /* Electronic_cigaretteTests.m */,
+				AA26C6B626117258008E9A6D /* Info.plist */,
+			);
+			path = Electronic_cigaretteTests;
+			sourceTree = "<group>";
+		};
+		AA26C6BE26117258008E9A6D /* Electronic_cigaretteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA26C6BF26117258008E9A6D /* Electronic_cigaretteUITests.m */,
+				AA26C6C126117258008E9A6D /* Info.plist */,
+			);
+			path = Electronic_cigaretteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA26C69126117254008E9A6D /* Electronic_cigarette */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA26C6C426117258008E9A6D /* Build configuration list for PBXNativeTarget "Electronic_cigarette" */;
+			buildPhases = (
+				AA26C68E26117254008E9A6D /* Sources */,
+				AA26C68F26117254008E9A6D /* Frameworks */,
+				AA26C69026117254008E9A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Electronic_cigarette;
+			productName = Electronic_cigarette;
+			productReference = AA26C69226117254008E9A6D /* Electronic_cigarette.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA26C6AF26117258008E9A6D /* Electronic_cigaretteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA26C6C726117258008E9A6D /* Build configuration list for PBXNativeTarget "Electronic_cigaretteTests" */;
+			buildPhases = (
+				AA26C6AC26117258008E9A6D /* Sources */,
+				AA26C6AD26117258008E9A6D /* Frameworks */,
+				AA26C6AE26117258008E9A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA26C6B226117258008E9A6D /* PBXTargetDependency */,
+			);
+			name = Electronic_cigaretteTests;
+			productName = Electronic_cigaretteTests;
+			productReference = AA26C6B026117258008E9A6D /* Electronic_cigaretteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA26C6BA26117258008E9A6D /* Electronic_cigaretteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA26C6CA26117258008E9A6D /* Build configuration list for PBXNativeTarget "Electronic_cigaretteUITests" */;
+			buildPhases = (
+				AA26C6B726117258008E9A6D /* Sources */,
+				AA26C6B826117258008E9A6D /* Frameworks */,
+				AA26C6B926117258008E9A6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA26C6BD26117258008E9A6D /* PBXTargetDependency */,
+			);
+			name = Electronic_cigaretteUITests;
+			productName = Electronic_cigaretteUITests;
+			productReference = AA26C6BB26117258008E9A6D /* Electronic_cigaretteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA26C68A26117254008E9A6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					AA26C69126117254008E9A6D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					AA26C6AF26117258008E9A6D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AA26C69126117254008E9A6D;
+					};
+					AA26C6BA26117258008E9A6D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AA26C69126117254008E9A6D;
+					};
+				};
+			};
+			buildConfigurationList = AA26C68D26117254008E9A6D /* Build configuration list for PBXProject "Electronic_cigarette" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA26C68926117254008E9A6D;
+			productRefGroup = AA26C69326117254008E9A6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA26C69126117254008E9A6D /* Electronic_cigarette */,
+				AA26C6AF26117258008E9A6D /* Electronic_cigaretteTests */,
+				AA26C6BA26117258008E9A6D /* Electronic_cigaretteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA26C69026117254008E9A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA26C6A826117257008E9A6D /* LaunchScreen.storyboard in Resources */,
+				AA26C6A526117257008E9A6D /* Assets.xcassets in Resources */,
+				AA26C6A026117254008E9A6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA26C6AE26117258008E9A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA26C6B926117258008E9A6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA26C68E26117254008E9A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA26C6AB26117257008E9A6D /* main.m in Sources */,
+				AA26C6A326117254008E9A6D /* Electronic_cigarette.xcdatamodeld in Sources */,
+				AA26C69D26117254008E9A6D /* ViewController.m in Sources */,
+				AA26C69726117254008E9A6D /* AppDelegate.m in Sources */,
+				AA26C69A26117254008E9A6D /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA26C6AC26117258008E9A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA26C6B526117258008E9A6D /* Electronic_cigaretteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA26C6B726117258008E9A6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA26C6C026117258008E9A6D /* Electronic_cigaretteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA26C6B226117258008E9A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA26C69126117254008E9A6D /* Electronic_cigarette */;
+			targetProxy = AA26C6B126117258008E9A6D /* PBXContainerItemProxy */;
+		};
+		AA26C6BD26117258008E9A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA26C69126117254008E9A6D /* Electronic_cigarette */;
+			targetProxy = AA26C6BC26117258008E9A6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA26C69E26117254008E9A6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA26C69F26117254008E9A6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA26C6A626117257008E9A6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA26C6A726117257008E9A6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA26C6C226117258008E9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA26C6C326117258008E9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA26C6C526117258008E9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Electronic_cigarette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electronic-cigarette.client.Electronic-cigarette";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA26C6C626117258008E9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Electronic_cigarette/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electronic-cigarette.client.Electronic-cigarette";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA26C6C826117258008E9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Electronic_cigaretteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electronic-cigarette.client.Electronic-cigaretteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Electronic_cigarette.app/Electronic_cigarette";
+			};
+			name = Debug;
+		};
+		AA26C6C926117258008E9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Electronic_cigaretteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electronic-cigarette.client.Electronic-cigaretteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Electronic_cigarette.app/Electronic_cigarette";
+			};
+			name = Release;
+		};
+		AA26C6CB26117258008E9A6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Electronic_cigaretteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electronic-cigarette.client.Electronic-cigaretteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Electronic_cigarette;
+			};
+			name = Debug;
+		};
+		AA26C6CC26117258008E9A6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Electronic_cigaretteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electronic-cigarette.client.Electronic-cigaretteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Electronic_cigarette;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA26C68D26117254008E9A6D /* Build configuration list for PBXProject "Electronic_cigarette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA26C6C226117258008E9A6D /* Debug */,
+				AA26C6C326117258008E9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA26C6C426117258008E9A6D /* Build configuration list for PBXNativeTarget "Electronic_cigarette" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA26C6C526117258008E9A6D /* Debug */,
+				AA26C6C626117258008E9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA26C6C726117258008E9A6D /* Build configuration list for PBXNativeTarget "Electronic_cigaretteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA26C6C826117258008E9A6D /* Debug */,
+				AA26C6C926117258008E9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA26C6CA26117258008E9A6D /* Build configuration list for PBXNativeTarget "Electronic_cigaretteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA26C6CB26117258008E9A6D /* Debug */,
+				AA26C6CC26117258008E9A6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AA26C6A126117254008E9A6D /* Electronic_cigarette.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AA26C6A226117254008E9A6D /* Electronic_cigarette.xcdatamodel */,
+			);
+			currentVersion = AA26C6A226117254008E9A6D /* Electronic_cigarette.xcdatamodel */;
+			path = Electronic_cigarette.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AA26C68A26117254008E9A6D /* Project object */;
+}
