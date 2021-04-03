@@ -1,0 +1,151 @@
+//
+//  YZYJ-Prefix.pch
+//  YZYJ
+//
+//  Created by lixiya on 11/6/14.
+//  Copyright (c) 2014 YZYJ. All rights reserved.
+//
+
+#ifndef YZYJ_YZYJ_Prefix_pch
+#define YZYJ_YZYJ_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+
+#ifdef __OBJC__
+
+#import "AppDelegate.h"
+#import <UIKit/UIKit.h>
+#import "UIhelpTools.h"
+#import "UIColor+YHLHexString.h"
+#import "UIImage+Utility.h"
+#import "IsBlankString.h"
+#import "SVProgressHUD.h"
+#import "XYCommon.h"
+#import "UIImageView+WebCache.h"
+#import "SDImageCache.h"
+#import "MJChiBaoZiHeader.h"
+#import "MJChiBaoZiFooter.h"
+#import "UConstants.h"
+#import "MBProgressHUD.h"
+#import "SVProgressHUD.h"
+#import "PhoneCall.h"
+#import "BlackTopViewController.h"
+#import "NetworkHandler.h"
+#import "NothingView.h"
+
+#endif
+
+#define IOS7 [[[UIDevice currentDevice] systemVersion]floatValue]>=7
+
+#define IphoneHeight  [[UIScreen mainScreen] bounds].size.height
+#define IphoneWidth  [[UIScreen mainScreen] bounds].size.width
+#define CurVersion  [UIDevice currentDevice].systemVersion
+
+#define VIEW_WIDTH(view)  (view.frame.size.width)
+#define VIEW_HEIGHT(view)  (view.frame.size.height)
+
+//颜色 快速根据RGB值创建UIColor:
+#define RGBColorMake(_R_,_G_,_B_,_alpha_) [UIColor colorWithRed:_R_/255.0f green:_G_/255.0f blue:_B_/255.0f alpha:_alpha_]
+#define setColor(a, b, c)               [UIColor colorWithRed:a/255.0f green:b/255.0f blue:c/255.0f alpha:1.0f]
+#define setColorWithAlpha(a, b, c, d)   [UIColor colorWithRed:a/255.0f green:b/255.0f blue:c/255.0f alpha:d];
+
+#define DicAll NSMutableDictionary *dic
+
+#define kDeviceWidth                    [UIScreen mainScreen].bounds.size.width  //屏幕的全部区域
+#define kDeviceHeight                   [UIScreen mainScreen].bounds.size.height  //屏幕的全部区域
+
+#define StatusRect [UIhelpTools getStatusBarHight]
+#define NavRect self.navigationController.navigationBar.frame.size.height
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
+
+#define _APPDELEGATE  (AppDelegate *)[[UIApplication sharedApplication] delegate]
+#define _SceneDelegate  (SceneDelegate *)[[UIApplication sharedApplication] delegate];
+
+/********************************key*******************************/
+
+//  扫描
+static NSString * const WZNotificationScanning =@"WZNotificationScanning";
+//  刷新购物车数量
+static NSString * const WZNotificationReloadHomeTotal =@"WZNotificationReloadHomeTotal";
+//  刷新订单列表
+static NSString * const WZNotificationOrderList =@"WZNotificationOrderList";
+
+#define UMKey  @"60479d8fb8c8d45c1393d281"
+#define PGYKey  @"5b10695a9897841f4dee08da211c1732"
+
+#define agreementHtml  @"http://tmw-zs.zqwzc.com/page/xieyi.html"
+#define policyHtml  @"http://tmw-zs.zqwzc.com/page/yinsi.html"
+
+//  测试
+//#define YMdomain @"https://tmw-dev.zqwzc.com/api/store/"
+//  正式
+#define YMdomain @"https://tmw-api.zqwzc.com/api/store/"
+
+#define vipAPIFormat_M(fmt, ...) [YMdomain stringByAppendingFormat:fmt, ##__VA_ARGS__]
+
+//  登录
+#define loginURL vipAPIFormat_M(@"auth/login")
+// 个人信息
+#define userInfoURL vipAPIFormat_M(@"personInformation/getUserInfo")
+// 修改密码
+#define modifyPasswordURL vipAPIFormat_M(@"personInformation/modifyPassword")
+//  反馈接口
+#define feedBackURL vipAPIFormat_M(@"feedBack/add")
+// 分类列表
+#define categoryListURL vipAPIFormat_M(@"stock/categoryList")
+//  销售端APP收银台商品列表
+#define cashGoodsListURL vipAPIFormat_M(@"cart/cashGoodsList")
+// 产品详情
+#define goodsDetailURL vipAPIFormat_M(@"cart/goodsDetail")
+// 添加到购物车
+#define updateCartProductURL vipAPIFormat_M(@"cart/updateCartProduct")
+// 购物车的货品列表
+#define productListURL vipAPIFormat_M(@"cart/productList")
+// 清空购物车
+#define emptyCartURL vipAPIFormat_M(@"cart/emptyCart")
+// 删除购物车中的货品
+#define deleteCartProductURL vipAPIFormat_M(@"cart/deleteCartProduct")
+// 收银台结算时校验库存接口
+#define checkStockURL vipAPIFormat_M(@"cart/checkStock")
+// 收银台结算时校验库存接口
+#define regionURL vipAPIFormat_M(@"region/list")
+// 新增地址接口
+#define addAddressURL vipAPIFormat_M(@"address/add")
+// 修改地址接口
+#define updateAddressURL vipAPIFormat_M(@"address/update")
+// 删除地址接口
+#define deleteAddressURL vipAPIFormat_M(@"address/delete")
+// 拉取地址列表
+#define addressListURL vipAPIFormat_M(@"address/list")
+// 创建一个零售订单
+#define addSaleURL vipAPIFormat_M(@"sale/add")
+// 支付
+#define payURL vipAPIFormat_M(@"pay/pay")
+// 查询订单接口
+#define queryOrderURL vipAPIFormat_M(@"pay/queryOrder")
+// 业绩统计接口
+#define statisticsURL vipAPIFormat_M(@"achievement/statistics")
+// 根据条件统计不同时间区间的业绩
+#define rangeStatisticsURL vipAPIFormat_M(@"achievement/rangeStatistics")
+// 根据条件统计每天业绩
+#define dailyStatisticsURL vipAPIFormat_M(@"achievement/dailyStatistics")
+// 销售端或代理端查询库存
+#define storeStockURL vipAPIFormat_M(@"stock/storeStock")
+// 订单列表
+#define saleListURL vipAPIFormat_M(@"sale/saleList")
+// 订单中的货品详情
+#define saleInfoURL vipAPIFormat_M(@"sale/saleInfo")
+
+

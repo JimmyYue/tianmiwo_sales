@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X4O-ND-yob" customClass="SettementBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTg-hc-ec2">
+                    <rect key="frame" x="10" y="10" width="192" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.1545689381709715" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DJu-3M-aFg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="修改价格">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="modifyBtnAction:" destination="X4O-ND-yob" eventType="touchUpInside" id="ewk-c6-bzf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-EI-Npp">
+                    <rect key="frame" x="212" y="10" width="192" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.15456893820000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Mlq-5T-MaB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="收款">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IXz-EI-Npp" firstAttribute="leading" secondItem="CTg-hc-ec2" secondAttribute="trailing" constant="10" id="LIw-Vb-kLc"/>
+                <constraint firstItem="CTg-hc-ec2" firstAttribute="top" secondItem="X4O-ND-yob" secondAttribute="top" constant="10" id="MWR-0y-6q6"/>
+                <constraint firstAttribute="trailing" secondItem="IXz-EI-Npp" secondAttribute="trailing" constant="10" id="SJL-Ym-21E"/>
+                <constraint firstItem="CTg-hc-ec2" firstAttribute="leading" secondItem="X4O-ND-yob" secondAttribute="leading" constant="10" id="Tps-XU-w4O"/>
+                <constraint firstItem="IXz-EI-Npp" firstAttribute="width" secondItem="CTg-hc-ec2" secondAttribute="width" id="aoQ-LJ-OTC"/>
+                <constraint firstItem="IXz-EI-Npp" firstAttribute="top" secondItem="X4O-ND-yob" secondAttribute="top" constant="10" id="hNZ-7l-M3b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionBtn" destination="IXz-EI-Npp" id="Jbg-8g-5dG"/>
+            </connections>
+            <point key="canvasLocation" x="247.82608695652175" y="353.23660714285711"/>
+        </view>
+    </objects>
+</document>

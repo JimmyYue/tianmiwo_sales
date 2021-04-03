@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oKL-O8-wm8" customClass="NothingView">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_nothingView" translatesAutoresizingMaskIntoConstraints="NO" id="uNi-5Q-CBo">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="ZZe-eQ-Y98"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无任何内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkE-c3-q2H">
+                    <rect key="frame" x="14" y="110" width="92" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="h3a-Ix-73Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uNi-5Q-CBo" firstAttribute="leading" secondItem="oKL-O8-wm8" secondAttribute="leading" id="A1C-b5-AyX"/>
+                <constraint firstItem="lkE-c3-q2H" firstAttribute="centerX" secondItem="oKL-O8-wm8" secondAttribute="centerX" id="DlQ-EJ-G0X"/>
+                <constraint firstItem="lkE-c3-q2H" firstAttribute="top" secondItem="uNi-5Q-CBo" secondAttribute="bottom" constant="10" id="dCN-Xa-zgk"/>
+                <constraint firstItem="uNi-5Q-CBo" firstAttribute="top" secondItem="oKL-O8-wm8" secondAttribute="top" id="jH9-qA-2XX"/>
+                <constraint firstAttribute="trailing" secondItem="uNi-5Q-CBo" secondAttribute="trailing" id="pjs-P9-Y1d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="392.75362318840581" y="-240.40178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="my_nothingView" width="120" height="100"/>
+    </resources>
+</document>

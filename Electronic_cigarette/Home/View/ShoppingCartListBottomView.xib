@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uOO-fc-kay" customClass="ShoppingCartListBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozs-kb-sHQ">
+                    <rect key="frame" x="20" y="22.5" width="44" height="20.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="Zfi-F6-DjJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-9i-Z6j">
+                    <rect key="frame" x="289" y="12.5" width="115" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="115" id="Tuf-dk-sBa"/>
+                        <constraint firstAttribute="height" constant="40" id="nou-qf-7BD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="结算"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dc-C1-7hq">
+                    <rect key="frame" x="74" y="22.5" width="21" height="20.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.94117647059999998" green="0.070588235289999995" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.22964311457004677" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="VWm-9i-Z6j" firstAttribute="centerY" secondItem="uOO-fc-kay" secondAttribute="centerY" id="DfH-91-kEd"/>
+                <constraint firstAttribute="trailing" secondItem="VWm-9i-Z6j" secondAttribute="trailing" constant="10" id="SQy-pm-AHT"/>
+                <constraint firstItem="ozs-kb-sHQ" firstAttribute="centerY" secondItem="uOO-fc-kay" secondAttribute="centerY" id="lUR-JY-cc4"/>
+                <constraint firstItem="ozs-kb-sHQ" firstAttribute="leading" secondItem="uOO-fc-kay" secondAttribute="leading" constant="20" id="roq-1x-Z6U"/>
+                <constraint firstItem="0Dc-C1-7hq" firstAttribute="leading" secondItem="ozs-kb-sHQ" secondAttribute="trailing" constant="10" id="udl-Or-FmH"/>
+                <constraint firstItem="0Dc-C1-7hq" firstAttribute="centerY" secondItem="ozs-kb-sHQ" secondAttribute="centerY" id="zfE-UY-kvQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allPriceLabel" destination="0Dc-C1-7hq" id="KPT-xr-QaK"/>
+                <outlet property="jisuanBtn" destination="VWm-9i-Z6j" id="7xl-Dv-yOZ"/>
+            </connections>
+            <point key="canvasLocation" x="-143.47826086956522" y="30.803571428571427"/>
+        </view>
+    </objects>
+</document>

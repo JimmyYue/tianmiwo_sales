@@ -7,7 +7,9 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-
+#import "LogViewController.h"
+#import "HomeViewController.h"
+#import "WZNavigationController.h"
 @interface SceneDelegate ()
 
 @end
@@ -19,6 +21,16 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    if ([IsBlankString isBlankString:[XYCommon GetUserDefault:@"Token"]] == NO) {
+        HomeViewController *bindingVC = [[HomeViewController alloc] init];
+        WZNavigationController *nav = [[WZNavigationController alloc] initWithRootViewController:bindingVC];
+        self.window.rootViewController = nav;
+    } else {
+        LogViewController *bindingVC = [[LogViewController alloc] init];
+        WZNavigationController *nav = [[WZNavigationController alloc] initWithRootViewController:bindingVC];
+        self.window.rootViewController = nav;
+    }
 }
 
 

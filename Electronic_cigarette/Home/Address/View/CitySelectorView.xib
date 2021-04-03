@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jNK-ks-jbS" customClass="CitySelectorView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMx-50-aSg">
+                    <rect key="frame" x="0.0" y="676" width="414" height="220"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="220" id="jNB-dD-4av"/>
+                    </constraints>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-MK-aix">
+                    <rect key="frame" x="0.0" y="625.5" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSJ-PP-Hmr">
+                            <rect key="frame" x="8" y="3" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="5dQ-Fn-N5N"/>
+                                <constraint firstAttribute="height" constant="44" id="I22-9x-sJ5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtnAction:" destination="jNK-ks-jbS" eventType="touchUpInside" id="ROv-6Q-WMJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpF-j5-GNu">
+                            <rect key="frame" x="356" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="nmB-4m-o3A"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                            <connections>
+                                <action selector="sureBtnAction:" destination="jNK-ks-jbS" eventType="touchUpInside" id="I0V-Et-uBi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="rpF-j5-GNu" secondAttribute="bottom" id="ZZP-0Q-cRS"/>
+                        <constraint firstAttribute="trailing" secondItem="rpF-j5-GNu" secondAttribute="trailing" constant="8" id="bGl-ac-9kT"/>
+                        <constraint firstItem="kSJ-PP-Hmr" firstAttribute="leading" secondItem="igZ-MK-aix" secondAttribute="leading" constant="8" id="bOj-GY-a0v"/>
+                        <constraint firstItem="kSJ-PP-Hmr" firstAttribute="centerY" secondItem="igZ-MK-aix" secondAttribute="centerY" id="d6g-p5-rYf"/>
+                        <constraint firstAttribute="height" constant="50" id="dVb-Fq-ZAO"/>
+                        <constraint firstItem="rpF-j5-GNu" firstAttribute="top" secondItem="igZ-MK-aix" secondAttribute="top" id="qjQ-h7-czE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33003567027396896" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="cMx-50-aSg" firstAttribute="top" secondItem="igZ-MK-aix" secondAttribute="bottom" constant="0.5" id="8W6-zw-lcW"/>
+                <constraint firstItem="igZ-MK-aix" firstAttribute="leading" secondItem="jNK-ks-jbS" secondAttribute="leading" id="R8Q-z8-erQ"/>
+                <constraint firstAttribute="trailing" secondItem="cMx-50-aSg" secondAttribute="trailing" id="VXZ-Cr-hnS"/>
+                <constraint firstItem="cMx-50-aSg" firstAttribute="leading" secondItem="jNK-ks-jbS" secondAttribute="leading" id="VxP-LW-1dU"/>
+                <constraint firstAttribute="trailing" secondItem="igZ-MK-aix" secondAttribute="trailing" id="gGD-kP-lpt"/>
+                <constraint firstAttribute="bottom" secondItem="cMx-50-aSg" secondAttribute="bottom" id="nVx-Y2-4Ob"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pickerView" destination="cMx-50-aSg" id="lso-Ni-nXO"/>
+            </connections>
+            <point key="canvasLocation" x="-307.24637681159425" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
